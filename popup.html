@@ -1,24 +1,25 @@
-
-<!-- Popup content for closed captions -->
-<!-- Two things that it needs to do for Phase 1: -->
-<!-- 1. Show a visible toggle the user can click (on/off) -->
-<!-- 2. Persist that toggle's state via chrome.storage, so it survives the popup closing and reopening -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closed Captions</title>
-</head>
-<body>
-    <div>
-        <label class="switch">
-            Closed Captions:
-            <input type="checkbox" id="toggleSwitch">
-            <span class="slider round"></span>
-        </label>
-    </div>
-    <script src="popup.js"></script> 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Closed Captions</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Popup content for closed captions -->
+        <!-- Two things that it needs to do for Phase 1: -->
+        <!-- 1. Show a visible toggle the user can click (on/off) -->
+        <!-- 2. Persist that toggle's state via chrome.storage, so it survives the popup closing and reopening -->
+        <div>
+            <label>
+                <h2>Enable Closed Captions</h2>
+            </label>
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <script src="popup.js"></script>
+    </body>
 </html>
