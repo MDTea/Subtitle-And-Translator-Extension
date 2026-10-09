@@ -23,7 +23,7 @@ Out of scope: Netflix and corporate streaming services.
 |---|---|---|
 | Speech-to-text | Deepgram Nova-3 (streaming) | Word-level timestamps and voice-activity detection signals |
 | Transcript cleanup | Claude Haiku 4.5 | Text-only cleanup pass; also handles translation later |
-| Language | JavaScript| TypeScript(planned) | Typed data across the audio, STT, and LLM pipeline |
+| Language | JavaScript, TypeScript(planned) | Typed data across the audio, STT, and LLM pipeline |
 | Platform | Chrome Manifest V3 | Required by Chrome |
 
 **Why two tiers instead of one multimodal model?** Realtime multimodal APIs are built for two-way conversation, not continuous one-way captioning. Splitting the pipeline also keeps each layer swappable and makes the STT-to-LLM handoff something I design myself.
@@ -90,4 +90,4 @@ fonts/            Atkinson Hyperlegible (.woff2)
 
 ## Author
 
-Madie ([@MDTea](https://github.com/MDTea))
+Madeleinne Tan ([@MDTea](https://github.com/MDTea))
