@@ -4,8 +4,8 @@ A Chrome extension that adds real-time closed captions to videos playing in your
 
 > **Status:** Phase 1 complete (popup toggle with persisted state). Audio capture and AI captioning are in progress.
 
-![Popup screenshot Before Toggle](docs/switch-before.png)
-![Popup screenshot After Toggle](docs/switch-after.png)
+![Popup screenshot Before Toggle](switch-before.png)
+![Popup screenshot After Toggle](switch-after.png)
 
 ## What it will do
 
