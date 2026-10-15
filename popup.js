@@ -11,6 +11,24 @@ async function toggleStateRead() {
 // Inside that listener: chrome.storage.local.set(...) with the checkbox's new checked value
 async function toggleStateWrite() {
     await chrome.storage.local.set({ toggleSwitchState: toggleSwitch.checked });
+    
+    if(toggleSwitch.checked) {
+        try{
+            const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+            const streamId = await chrome.tabCapture.getMediaStreamId({ targetTabId: tab.id });
+            console.log('Toggle switch is ON, tabId is: ', tab.id, ' streamId is: ', streamId);     
+            // chrome.runtime.sendMessage({ type: 'start-capture', streamId, tabId: tab.id });
+        }
+        catch (error) {
+            console.error('Failed to start capture: ', error);
+            toggleSwitch.checked = false;
+            await chrome.storage.local.set({ toggleSwitchState: false });
+        }
+    }
+    else{
+        // chrome.runtime.sendMessage({ type: 'stop-capture' });
+        console.log('Toggle switch is OFF');
+    }
 }
 
 // Call toggleStateRead on load (immediately)

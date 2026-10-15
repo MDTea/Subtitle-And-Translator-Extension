@@ -85,7 +85,7 @@ fonts/            Atkinson Hyperlegible (.woff2)
 
 ## Credits
 
-- Font: [Atkinson Hyperlegible](https://brailleinstitute.org/freefont) by the Braille Institute, licensed under the SIL Open Font License.
+- Font: [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible?preview.script=Latn) by Google Fonts, licensed under the SIL Open Font License, Version 1.1.
 - Switch styling adapted from the [W3Schools toggle switch tutorial](https://www.w3schools.com/howto/howto_css_switch.asp).
 
 ## Author

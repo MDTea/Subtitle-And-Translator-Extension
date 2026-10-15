@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Closed Captions</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Popup content for closed captions -->
@@ -12,11 +15,9 @@
         <!-- 1. Show a visible toggle the user can click (on/off) -->
         <!-- 2. Persist that toggle's state via chrome.storage, so it survives the popup closing and reopening -->
         <div>
-            <label>
-                <h2>Enable Closed Captions</h2>
-            </label>
+            <h2 id="header-main">Enable Closed Captions</h2>
             <label class="switch">
-                <input type="checkbox" id="toggleSwitch">
+                <input type="checkbox" id="toggleSwitch" aria-labelledby="header-main">
                 <span class="slider round"></span>
             </label>
         </div>
